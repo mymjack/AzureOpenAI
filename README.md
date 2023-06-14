@@ -20,11 +20,10 @@ The application frontend is a Blazor application with Intelligent Agent UI funct
 
 This solution is composed of the following services:
 
-1.	Azure Cosmos DB - Stores the operational retail data, chat prompts and completions.
-1.  Azure Cosmos DB for MongoDB vCore - stores the vectorized retail data for search.
-1.	Azure Functions - Hosts a Cosmos DB trigger to generate embeddings and Azure Cosmos DB for MongoDB vCore to save the vectors.
+1.	Azure Cosmos DB for PostgreSQL - Stores the operational retail data, chat prompts, completions and the vectorized retail data for search
 1.	Azure OpenAI - Generates embeddings using the Embeddings API and chat completions using the Completion API.
 1.	Azure App Service - Hosts Intelligent Agent UX.
+1.	Azure App Service - Hosts Data Access Layer and integration with Azure Open AI generate embeddings and completions using the relevant API
 
 ## Overall solution workflow
 
